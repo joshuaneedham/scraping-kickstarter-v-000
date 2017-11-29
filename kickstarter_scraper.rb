@@ -6,6 +6,7 @@ def create_project_hash
   @@projects = {}
   def initialize(title)
     @title = title
+    @@projects << self
   end
 
   def projects
