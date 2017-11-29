@@ -1,15 +1,11 @@
 # require libraries/modules here
 require 'nokogiri'
+require 'pry'
 def create_project_hash
   # write your code here
-  attr_accessor :project_title
-  @@projects = {}
-  def initialize(project_title)
-    @project_title = project_title
-    @@projects << self
-  end
+  html = File.read('fixtures/kickstarter.html')
 
-  def projects
-    @@projects
-  end
+  kickstarter = Nokogiri::HTML(html)
+
+  binding.pry
 end
