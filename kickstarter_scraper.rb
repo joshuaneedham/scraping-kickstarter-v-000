@@ -2,8 +2,8 @@
 require 'Nokogiri'
 def create_project_hash
   # write your code here
-  attr_accessor :title, :image_link, :description, :location, :percent_funded
-
+  attr_accessor 
+  @@projects = {}
   def initialize(title)
     @title = title    
   end
